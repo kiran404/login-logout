@@ -4,7 +4,7 @@ import { MyForm } from './MyForm';
 
 function App() {
   return (
-    <div className="App">
+    <div className="App" style={{ textAlign: 'center' }}>
       <MyForm onSubmit={() => { }} />
     </div>
   );

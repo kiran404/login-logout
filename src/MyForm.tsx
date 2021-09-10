@@ -16,14 +16,13 @@ export const MyForm: React.FC<Props> = ({ onSubmit }) => {
     return (
         <Formik
             initialValues={{ firstName: '', lastName: '', email: '' }}
-            onSubmit={values => {
-                onSubmit(values);
-            }}>
-            {({ values, handleChange, handleBlur }) => (
+            onSubmit={values => { onSubmit(values); }
+            }>
 
+            {({ values, handleChange, handleBlur }) => (
                 <Form>
                     <TextField
-                        name="firstname"
+                        name="firstName"
                         value={values.firstName}
                         onChange={handleChange}
                         onBlur={handleBlur}
